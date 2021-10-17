@@ -206,7 +206,7 @@ print_tree string_of_int(Node (Leaf 100, Node (Leaf 100, Node (Leaf 100, Leaf 20
 print_tree string_of_int tree1;;
 print_tree string_of_int tree2;;
 (* the parameter toss is a function that converts the content type of 
-   the tree to a string. In this case, the trees' content are interers.
+   the tree to a string. In this case, the trees' content are integers.
    Therefore we use the function string_of_int.
      Toss is dependant on the type of variable the tree contains*)
 
