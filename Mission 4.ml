@@ -49,7 +49,7 @@ let is_good = function
 (** Functions are first-class, they can appear in records. **)
 
 (*depricated version of type test*)
-(*
+
   type test =
    { (* A function which should be tested. *)
      fonc: (int -> int) ; 
@@ -57,16 +57,16 @@ let is_good = function
      arg: int ; 
      (* The expected result. *)
 expect: int };;
-*)
+
 (*EXERCICE: RECORDS*)
 
 (*depricated version of type test*)
-(*
+
 type 'a test =
   { fonc: ('a -> int) ;
     arg: 'a ;
     expect: int };;
-*)
+
 type ('a, 'b ) test_poly =
   { fonc: ('a -> 'b) ;
     arg: 'a ;
