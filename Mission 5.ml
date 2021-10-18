@@ -240,8 +240,11 @@ print_tree (fun x->x) tree2;;
 
 let rec tfind pred = function
   |Leaf (x) -> if pred x = true then Some x else None
-  |Node(a,b) -> tfind pred a;;
-                   
+  |Node(a,b) -> match tfind pred a with
+       | None -> tfind pred b
+       | r -> r
+  ;;
+                  
 let rec contains c = function
   |Leaf (x) -> if c = x then true else false
   |Node(a,b) -> contains c a || contains c b;;
