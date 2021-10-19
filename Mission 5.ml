@@ -16,7 +16,7 @@ let rec nth list int = match list with
   
 let list1 = ["1";"2";"3";"4";"5"];;
 nth list1 3;;
-nth list1 6;;
+(*nth list1 6;;*)
 
   
 let rec rev acu = function 
